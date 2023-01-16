@@ -31,22 +31,22 @@ function convert() {
 }
 
 const toMeterFeet = (value) => {
-	const feet = value * 3.281;
-	const meters = value * 0.3048;
+	const feet = Number(value * 3.281).toFixed(3);
+	const meters = Number(value * 0.3048).toFixed(3);
 
 	meterFeetEl.textContent = `${value} meters = ${feet} feet | ${value} feet = ${meters} meters`;
 };
 
 const toLitersGallons = (value) => {
-	const gallons = value * 0.264;
-	const liters = value * 4.54609;
+	const gallons = Number(value * 0.264).toFixed(3);
+	const liters = Number(value * 4.54609).toFixed(3);
 
 	literGallonEl.textContent = `${value} liters = ${gallons} gallons | ${value} gallons = ${liters} liters`;
 };
 
 const toKiloPounds = (value) => {
-	const pounds = value * 2.204;
-	const kilos = value * 0.4535924;
+	const pounds = Number(value * 2.204).toFixed(3);
+	const kilos = Number(value * 0.4535924).toFixed(3);
 
 	kiloPoundEl.textContent = `${value} kilos = ${pounds} pounds | ${value} pounds = ${kilos} kilos`;
 };
